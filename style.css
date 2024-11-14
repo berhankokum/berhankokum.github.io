@@ -1,0 +1,267 @@
+body{
+    background-color: #dbdbdb;
+}
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    background-color: #333;
+    padding: 5px;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li{
+    float: right;
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+h1{
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    text-align: center;
+    font-size: 100px;
+    color: #333;
+    font-family: "Open Sans", sans-serif;
+    border-bottom: 7px solid #333; 
+    padding-bottom: 5px;
+    border-top: 7px solid #333;
+    padding-top: 5px;
+}
+header h3{
+    position: absolute;
+    top: 38%;
+    left: 31%;
+    text-align: center;
+    font-size: 70px;
+    color: #333;
+    font-family: "Open Sans", sans-serif;
+
+}
+h3{
+    position: absolute;
+    top: 100%;
+    left: 40%;
+    text-align: center;
+    font-size: 70px;
+    color: #333;
+    font-family: "Open Sans", sans-serif;
+
+}
+header h4{
+    text-align: center;
+    margin-top: 9%;
+    font-size: 70px;
+    color: #333;
+    font-family: "Open Sans", sans-serif;
+
+}
+.saat{
+    position: absolute;
+    top: 45%;
+    left: 32%;
+    font-size: 100px;
+    font-family: "Open Sans", sans-serif;
+    padding: 15px 25px;
+    color: #333;
+
+
+}
+/*.homepage {
+    position: absolute;
+    top: 70%; 
+    left: 20%; 
+    text-decoration: none; 
+
+}
+.about_me {
+    position: absolute;
+    top: 70%; 
+    left: 44%; 
+    text-decoration: none; 
+
+}
+.project{
+    position: absolute;
+    top: 70%; 
+    left: 70%; 
+    text-decoration: none; 
+
+
+}
+.iletisim{
+    position: absolute;
+    top: 85%; 
+    left: 45%; 
+    text-decoration: none; 
+    font-size: 30px;
+    size: 30px;
+}*/
+a:link, a:visited{    
+    background-color: #333;
+    color: #dbdbdb; 
+    padding: 15px 25px;
+    font-size: 30px;
+    font-family: Cambria;
+    
+}
+a:hover, a:active{
+    border-bottom: 5px solid #dbdbdb;
+}
+form{
+    position: absolute;
+    top: 122%;
+    left: 30%;
+    width: 40%;
+    height: 40%;
+    background-color: #dbdbdb;
+    padding: 10px;
+}
+form label{
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    color: #333;
+    text-align: center;
+}
+form input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+
+}
+form textarea{
+    width: 100%;
+    height: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+
+}
+form input[type=submit]{
+    background-color: #333;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 150px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    
+
+}
+section h2{
+    position: absolute;
+    top: 15%;
+    left: 32%;
+    text-align: center;
+    font-size: 70px;
+    color: #333;
+    border-bottom: 4px solid #333;
+    font-family: "Open Sans", sans-serif;
+}
+section p{
+    position: absolute;
+    top: 40%;
+    left: 14%;
+    text-align: center;
+    font-size: 20px;
+    color: #333;
+    font-family: "Open Sans", sans-serif;
+    border-bottom: 3px solid #333;
+}
+article button{
+    position: absolute;
+    top: 60%;
+    left: 44%;
+    text-decoration: none;
+    font-size: 15px;
+    size: 10px;
+    background-color: #333;
+    color: #dbdbdb;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-family: Cambria;
+}
+article button:hover{
+    background-color: black;
+}
+
+article p{
+    position: absolute;
+    top: 55%;
+    left: 18%;
+    text-align: center;
+    font-size: 20px;
+    color: #333;
+    font-family: "Open Sans", sans-serif;
+}
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Öğeler arası boşluk */
+    justify-content: space-between;
+  }
+
+  .gallery {
+    width: calc(33.33% - 10px); /* 3 sütun düzeni için genişlik ayarı */
+    box-sizing: border-box;
+    transition: transform 0.3s ease; /* Geçiş süresi */
+
+  }
+
+  .gallery:hover {
+    transform:scale(1.1) ;
+  }
+
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  .desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+  /* Ekran boyutuna göre düzen değişikliği */
+  @media only screen and (max-width: 700px) {
+    .gallery {
+      width: calc(50% - 10px); /* 2 sütun düzeni */
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .gallery {
+      width: 100%; /* Tek sütun düzeni */
+    }
+  }
+
+.sort_button{
+    text-decoration: none;
+    font-size: 15px;
+    size: 10px;
+    background-color: #333;
+    color: #dbdbdb;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: Cambria;
+}
+.sort_button:hover{
+    background-color: black;
+}
