@@ -61,12 +61,12 @@ function see_more(){
 
     if(hide_text.style.display != "none"){
         hide_text.style.display = "none";
-        see_text.textContent = "daha fazla";
+        see_text.textContent = "Daha fazla";
         see_text.style.marginTop = "10px";
     }
     else{
         hide_text.style.display = "block";
-        see_text.textContent = "daha az";
+        see_text.textContent = "Daha az";
         see_text.style.marginTop = "80px";
     }
 }
