@@ -72,21 +72,35 @@ function see_more(){
 }
 
 function sortProjects(flag){
+    const therone_title = "Deprem sonrası acil durum müdahalelerinde hızlı ve etkili bir şekilde enkaz alanlarını ve güvenli yolları tespit etmek kritik öneme sahiptir."+ 
+        "Bu ihtiyacı karşılamak için geliştirilen Deprem Dronu, yapay zeka tabanlı görüntü işleme teknolojisiyle donatılmış, otonom bir haritalama aracıdır."+
+        "Deprem Dronu, enkaz alanlarında hızlı ve etkili bir şekilde haritalama yaparak, enkaz altında kalan insanları tespit etmeyi ve kurtarma ekiplerine yol göstermeyi hedefler.";
+   
+    const pharmacy_title = "Bu proje, java programlama dili kullanılarak geliştirilmiş bir konsol uygulamasıdır. "+
+        "bir eczanenin temel iş süreçlerini dijital olarak yönetmek için geliştirilen bir Java konsol uygulamasıdır."+
+         "Bu uygulama, eczane çalışanlarının ve yöneticilerinin ilaç stoklarını, müşteri taleplerini, satışları ve tedarik işlemlerini kolayca takip etmelerini sağlar."+ 
+         "Konsol tabanlı arayüzü sayesinde hızlı, kullanıcı dostu ve düşük kaynak tüketimli bir çözüm sunar.";
+
+    const library_title = "Bu proje, bir kütüphane yönetim sistemi geliştirmek için oluşturulmuş, C# dilinde yazılmış bir konsol tabanlı uygulamadır."+
+    "Sistem, kütüphane çalışanlarının ve yöneticilerinin kitapları, üyeleri ve ödünç alma süreçlerini kolaylıkla yönetmesine yardımcı olmak amacıyla tasarlanmıştır."+ 
+    "Hızlı, kullanıcı dostu ve özelleştirilebilir yapısıyla hem küçük hem de büyük ölçekli kütüphaneler için etkili bir çözümdür.";    
+
+
     if(flag){
-        document.getElementById("project1").src="assets/teknofest-logo.jpg";
-        document.getElementById("desc1").innerHTML = "teknofest";
-        document.getElementById("project2").src = "assets/console-app.jpg";
-        document.getElementById("desc2").innerHTML = "console";
+        document.getElementById("project1").src="assets/library-management-system.png";
+        document.getElementById("desc1").innerHTML = library_title;
+        document.getElementById("project2").src = "assets/pharmacy-management-system.jpg";
+        document.getElementById("desc2").innerHTML = pharmacy_title;
         document.getElementById("project3").src = "assets/therone.jpg";
-        document.getElementById("desc3").innerHTML = "therone";
+        document.getElementById("desc3").innerHTML = therone_title;
     }
     else{
         document.getElementById("project1").src="assets/therone.jpg";
-        document.getElementById("desc1").innerHTML = "therone";
-        document.getElementById("project2").src = "assets/console-app.jpg";
-        document.getElementById("desc2").innerHTML = "console";
-        document.getElementById("project3").src = "assets/teknofest-logo.jpg";
-        document.getElementById("desc3").innerHTML = "teknofest";
+        document.getElementById("desc1").innerHTML = therone_title;
+        document.getElementById("project2").src = "assets/pharmacy-management-system.jpg";
+        document.getElementById("desc2").innerHTML = pharmacy_title;
+        document.getElementById("project3").src = "assets/library-management-system.png";
+        document.getElementById("desc3").innerHTML = library_title;
     }
 
 
