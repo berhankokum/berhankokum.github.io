@@ -1,7 +1,7 @@
-/* Genel Ayarlar */
+/* body */
 body {
     background-color: #222831;
-    font-family: "Edu AU VIC WA NT Pre", cursive;
+    font-family: "Oxanium", serif;
     margin: 0;
     padding: 0;
 }
@@ -33,16 +33,19 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 25px;    
+    transition: all 0.3s ease;
 }
 
 li a:hover {
     border: 3px solid #00ADB5;
-    border-radius: 30px;
+    padding: 10px 20px;
     background-color: #00ADB5;
     color: #EEEEEE;
+    
+    
 }
 
-/* Ana Başlık ve Açıklama */
+/* Ana Başlık */
 header h1 {
     text-align: center;
     font-size: 100px;
@@ -51,7 +54,7 @@ header h1 {
     padding-top: 40px;
     text-decoration: underline;
 }
-
+/*İsim*/
 header h3 {
     text-align: center;
     font-size: 70px;
@@ -60,7 +63,7 @@ header h3 {
 }
 
 
-/* Saat Alanı */
+/* Saat  */
 .saat {
     text-align: center;
     font-size: 90px;
@@ -68,6 +71,7 @@ header h3 {
     margin-top: 1px;
     color: #08D9D6;
 }
+/*iletişim*/
 h3{
     text-align: center;
     font-size: 50px;
@@ -119,6 +123,7 @@ form input[type=button]:hover {
     color: #FF2E63;
 }
 
+/*sıralama butonu*/
 .sort_button_div {
     display: flex;
     justify-content: center; 
@@ -140,26 +145,28 @@ form input[type=button]:hover {
     color: #222831;
 }
 
-/* Galeri */
-.gallery-container {
+/*proje resimleri*/
+.images-container {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: space-around;
     padding: 20px;
+    
 }
 
-.gallery {
+.images {
     width: 33.33%;
     box-sizing: border-box;
     transition: transform 0.3s ease;
+    
 }
 
-.gallery:hover {
+.images:hover {
     transform: scale(1.05);
 }
 
-.gallery img {
+.images img {
     width: 100%;
     height: auto;
     margin: 10px 0;
@@ -171,7 +178,7 @@ form input[type=button]:hover {
     color: #08D9D6;
 }
 
-
+/*mobil uyumluluk ayarları*/
 @media only screen and (max-width: 992px) {
     header h1 {
         font-size: 50px;
@@ -182,7 +189,7 @@ form input[type=button]:hover {
     form {
         width: 80%;
     }
-    .gallery {
+    .images {
         width:50%; 
     }
 }
@@ -199,17 +206,20 @@ form input[type=button]:hover {
     }
     nav ul {
         flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
         align-items: center;
+        justify-content: flex-start;
     }
     nav ul li {
         margin: 10px 0;
     }
-    .gallery {
+    .images {
         width: 100%; 
     }
 }
 
-/* Bölüm Başlıkları ve Açıklama */
+/* Hakkımda Başlıkları ve paragraflar */
 section h2{
     text-align: center;
     font-size: 20px;
@@ -234,8 +244,8 @@ section div h2 {
 article button {
     display: block;
     margin: 20px auto;
-    background-color: #304D30;
-    color: #EEF0E5;
+    background-color: #00ADB5;
+    color: #222831;
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
@@ -243,7 +253,7 @@ article button {
 }
 
 article button:hover {
-    background-color: #163020;
+    background-color: #08D9D6;
 
 }
 

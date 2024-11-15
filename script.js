@@ -1,3 +1,4 @@
+// saat basamaklarına göre sıfır ekleyen fonksiyon
 function paddingZero(num){
     let z_num;
     if(num < 10){
@@ -8,7 +9,7 @@ function paddingZero(num){
     }
     return z_num;
 }
-
+// saati string formatına dönüştüre fonksiyon
 function updateClock() {
     const now=new Date();
     const hour= now.getHours();
@@ -25,6 +26,7 @@ function updateClock() {
 setInterval(updateClock, 1000);
 updateClock();
 
+//formda isim soyisim ve email alanlarının formatlarını kontrol eden fonksiyon
 function formValidation(){
     const isim = document.forms["contact"]["isim"].value;
     const soyisim = document.forms["contact"]["soyisim"].value;
@@ -51,13 +53,10 @@ function formValidation(){
         else{
             alert("Form başarıyla gönderildi.");
         }
-
-        
-        
-
     }
 }
 
+// daha fazla ve daha az göster butonunu kontrol eden fonksiyon
 function see_more(){
     hide_text = document.getElementById("hide_text");
     see_text = document.getElementById("see_more");
@@ -74,6 +73,7 @@ function see_more(){
     }
 }
 
+// projeleri tarih ve beğeniye göre sıralayan fonksiyon
 function sortProjects(flag){
     const therone_title = "Deprem sonrası acil durum müdahalelerinde hızlı ve etkili bir şekilde enkaz alanlarını ve güvenli yolları tespit etmek kritik öneme sahiptir."+ 
         "Bu ihtiyacı karşılamak için geliştirilen Deprem Dronu, yapay zeka tabanlı görüntü işleme teknolojisiyle donatılmış, otonom bir haritalama aracıdır."+
@@ -105,10 +105,4 @@ function sortProjects(flag){
         document.getElementById("project3").src = "assets/library-management-system.png";
         document.getElementById("desc3").innerHTML = library_title;
     }
-
-
-    
-
-
-
 }
