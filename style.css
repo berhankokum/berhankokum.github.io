@@ -193,9 +193,10 @@ section h2, section p, article p {
     max-width: 90%;
 }
 
-section h2 {
-    font-size: 40px;
-    border-bottom: 3px solid #333;
+section div h2 {
+    font-size: 70px;
+    margin-top: 50px;
+    text-align: center;
 }
 
 article button {

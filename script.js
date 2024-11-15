@@ -73,7 +73,7 @@ function see_more(){
 
 function sortProjects(flag){
     if(flag){
-        document.getElementById("project1").src="assets/Teknofest-logo.jpg";
+        document.getElementById("project1").src="assets/teknofest-logo.jpg";
         document.getElementById("desc1").innerHTML = "teknofest";
         document.getElementById("project2").src = "assets/console-app.jpg";
         document.getElementById("desc2").innerHTML = "console";
@@ -85,7 +85,7 @@ function sortProjects(flag){
         document.getElementById("desc1").innerHTML = "therone";
         document.getElementById("project2").src = "assets/console-app.jpg";
         document.getElementById("desc2").innerHTML = "console";
-        document.getElementById("project3").src = "assets/Teknofest-logo.jpg";
+        document.getElementById("project3").src = "assets/teknofest-logo.jpg";
         document.getElementById("desc3").innerHTML = "teknofest";
     }
 
