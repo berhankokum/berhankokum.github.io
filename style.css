@@ -91,7 +91,7 @@ form {
 
 form label {
     font-size: 18px;
-    color: #EEEEEE;
+    color: #08D9D6;
 }
 
 form input, form textarea {
@@ -104,7 +104,7 @@ form input, form textarea {
 
 form input[type=button] {
     background-color: #393E46;
-    color: #EEEEEE;
+    color: #08D9D6;
     padding: 12px;
     border: none;
     cursor: pointer;
