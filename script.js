@@ -33,24 +33,27 @@ function formValidation(){
     const isim_format = /^([a-zA-ZçÇğĞıİöÖşŞüÜ]{2,}\s?)+$/;
     if(isim == "" || soyisim == "" || email == ""){              
         alert("Lütfen tüm alanları doldurunuz.");
-        return false;
+        
     }
     else{
         if(!isim_format.test(isim)){
             alert("Lütfen geçerli bir isim giriniz.");
-            return false;
+            
         }
-        if(!isim_format.test(soyisim)){
+        else if(!isim_format.test(soyisim)){
             alert("Lütfen geçerli bir soyisim giriniz.");
-            return false;
+            
         }
-        if(!mail_format.test(email)){
+        else if(!mail_format.test(email)){
             alert("Lütfen geçerli bir email adresi giriniz.");
-            return false;
+            
+        }
+        else{
+            alert("Form başarıyla gönderildi.");
         }
 
-        alert("Form başarıyla gönderildi.");
-        return true;
+        
+        
 
     }
 }
@@ -63,7 +66,7 @@ function see_more(){
         hide_text.style.display = "none";
         see_text.textContent = "Daha fazla";
         see_text.style.marginTop = "10px";
-    }
+    } 
     else{
         hide_text.style.display = "block";
         see_text.textContent = "Daha az";
