@@ -198,7 +198,7 @@ form input[type=button]:hover {
         width: 90%;
     }
     nav ul {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
     }
     nav ul li {
