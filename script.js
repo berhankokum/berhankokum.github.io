@@ -92,17 +92,27 @@ function sortProjects(flag){
     if(flag){
         document.getElementById("project1").src="assets/library-management-system.png";
         document.getElementById("desc1").innerHTML = library_title;
+        document.getElementById("link1").href ="https://github.com/berhankokum/ce103-hw3-2022-2023-muhammedberhan-kokum.git";
+
         document.getElementById("project2").src = "assets/pharmacy-management-system.jpg";
         document.getElementById("desc2").innerHTML = pharmacy_title;
+        document.getElementById("link2").href ="https://github.com/berhankokum/ce103-hw4-2022-2023-muhammedberhan-kokum.git";
+
         document.getElementById("project3").src = "assets/therone.jpg";
         document.getElementById("desc3").innerHTML = therone_title;
+        document.getElementById("link3").href ="https://www.linkedin.com/company/the-rone/";
     }
     else{
         document.getElementById("project1").src="assets/therone.jpg";
         document.getElementById("desc1").innerHTML = therone_title;
+        document.getElementById("link1").href ="https://www.linkedin.com/company/the-rone/";
+
         document.getElementById("project2").src = "assets/pharmacy-management-system.jpg";
         document.getElementById("desc2").innerHTML = pharmacy_title;
+        document.getElementById("link2").href ="https://github.com/berhankokum/ce103-hw4-2022-2023-muhammedberhan-kokum.git";
+
         document.getElementById("project3").src = "assets/library-management-system.png";
         document.getElementById("desc3").innerHTML = library_title;
+        document.getElementById("link3").href ="https://github.com/berhankokum/ce103-hw3-2022-2023-muhammedberhan-kokum.git";
     }
 }
