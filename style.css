@@ -98,14 +98,18 @@ form input, form textarea {
     box-sizing: border-box;
 }
 
-form input[type=submit] {
-    background-color: #304D30;
+form input[type=button] {
+    background-color: #163020;
     color: #EEF0E5;
     padding: 12px;
     border: none;
     cursor: pointer;
     width: 100%;
     font-size: 18px;
+}
+form input[type=button]:hover {
+    background-color: #304D30;
+    
 }
 .project_header{
     text-align: center;
